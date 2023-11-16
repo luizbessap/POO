@@ -93,7 +93,15 @@ public class Main {
         cursos.add(c2);
         
         pr1.setCursos(cursos);
-         
+        
+        //adicionando disciplina
+        Disciplina disciplina = new Disciplina();
+        disciplina.setNome("Matemática");
+        disciplina.addAluno(a1);
+        disciplina.addCurso(c1);
+        disciplina.setProfessor(pr1);
+
+        disciplina.imprimirDisciplina();
         
         p1.imprimir();
         System.out.println("\n");
